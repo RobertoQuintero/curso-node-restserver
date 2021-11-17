@@ -1,8 +1,17 @@
-GET http://localhost:8080/api/usuarios
+GET http://localhost:8080/api/usuarios?nombre=RobertoQuintero&edad=35
 
 ###
 
 POST   http://localhost:8080/api/usuarios
+Content-Type: application/json
+
+{
+  "nombre":"Roberto",
+  "edad":32
+}
+###
+
+PUT   http://localhost:8080/api/usuarios/10
 Content-Type: application/json
 
 {
