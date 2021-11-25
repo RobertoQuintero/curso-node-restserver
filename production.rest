@@ -1,14 +1,14 @@
-GET http://localhost:8080/api/usuarios
+GET https://restserver-nodeudemy.herokuapp.com/api/usuarios
 
 ###
-GET http://localhost:8080/api/usuarios
+GET https://restserver-nodeudemy.herokuapp.com/api/usuarios
 
 ###
 GET https://restserver-nodeudemy.herokuapp.com/api/usuarios?nombre=RobertoQuintero&edad=35
 
 ###
 
-POST   http://localhost:8080/api/usuarios
+POST   https://restserver-nodeudemy.herokuapp.com/api/usuarios
 Content-Type: application/json
 
 {
@@ -20,7 +20,7 @@ Content-Type: application/json
 }
 ###
 
-PUT  http://localhost:8080/api/usuarios/619fd9534d51dbfc8205d199
+PUT  https://restserver-nodeudemy.herokuapp.com/api/usuarios/619fd9534d51dbfc8205d199
 Content-Type: application/json
 
 {
@@ -33,7 +33,7 @@ Content-Type: application/json
 
 ###
 
-PUT   http://localhost:8080/api/usuarios/10
+PUT   https://restserver-nodeudemy.herokuapp.com/api/usuarios/10
 Content-Type: application/json
 
 {
@@ -41,4 +41,4 @@ Content-Type: application/json
   "edad":32
 }
 ###
-DELETE http://localhost:8080/api/usuarios/619fee4f36a2dea09340c903
+DELETE https://restserver-nodeudemy.herokuapp.com/api/usuarios/619fee4f36a2dea09340c903
