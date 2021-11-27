@@ -41,4 +41,14 @@ Content-Type: application/json
   "edad":32
 }
 ###
-DELETE https://restserver-nodeudemy.herokuapp.com/api/usuarios/619fee4f36a2dea09340c903
+DELETE https://restserver-nodeudemy.herokuapp.com/api/usuarios/619feee436a2dea09340c94b
+x-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2MTlmZWU0ZjM2YTJkZWEwOTM0MGM5MDMiLCJpYXQiOjE2MzgwNDE5NTYsImV4cCI6MTYzODA1NjM1Nn0.V6wiGSjzaRH9tqsGwnFDP1KYKk24ma9u8MT1lhnGd5I
+
+###
+POST https://restserver-nodeudemy.herokuapp.com/api/auth/login
+Content-Type: application/json
+
+{
+  "correo":"test1@test.com",
+ "password":"123456"
+}
