@@ -7,7 +7,7 @@ const {
   usuariosPatch,
   usuariosPut,
   usuariosPost,
-} = require("../controllers/usuarios");
+} = require("../controllers");
 
 const {
   esRolValido,

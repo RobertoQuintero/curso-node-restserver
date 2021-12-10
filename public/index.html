@@ -27,7 +27,6 @@
     ></div>
     <button id="google_signout">SignOut</button>
 
-    <script src="https://accounts.google.com/gsi/client" async defer></script>
     <script>
       function handleCredentialResponse(response) {
         const body = { id_token: response.credential };
@@ -56,5 +55,6 @@
         });
       };
     </script>
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
   </body>
 </html>

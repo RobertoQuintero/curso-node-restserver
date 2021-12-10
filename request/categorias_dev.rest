@@ -1,0 +1,31 @@
+GET http://localhost:8080/api/categorias
+
+
+###
+GET http://localhost:8080/api/categorias/61abf1524ce8b7080d252c4b
+
+
+###
+POST http://localhost:8080/api/categorias
+Content-Type: application/json
+x-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2MTlmZWU0ZjM2YTJkZWEwOTM0MGM5MDMiLCJpYXQiOjE2Mzg2NTY1ODUsImV4cCI6MTYzODY3MDk4NX0.6fENDYAHV0Od5mdArM-2atwPMSXcJRjv6aZ--oZ0C3M
+
+{
+  "nombre":"Galleta"
+}
+
+###
+PUT http://localhost:8080/api/categorias/61abf1524ce8b7080d252c4b
+Content-Type: application/json
+x-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2MTlmZWU0ZjM2YTJkZWEwOTM0MGM5MDMiLCJpYXQiOjE2Mzg2NTY1ODUsImV4cCI6MTYzODY3MDk4NX0.6fENDYAHV0Od5mdArM-2atwPMSXcJRjv6aZ--oZ0C3M
+
+{
+  "nombre":"CAFE"
+}
+
+###
+DELETE http://localhost:8080/api/categorias/61abf1524ce8b7080d252c4b
+x-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2MTlmZWU0ZjM2YTJkZWEwOTM0MGM5MDMiLCJpYXQiOjE2Mzg2NTY1ODUsImV4cCI6MTYzODY3MDk4NX0.6fENDYAHV0Od5mdArM-2atwPMSXcJRjv6aZ--oZ0C3M
+
+
+###

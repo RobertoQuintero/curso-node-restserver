@@ -1,0 +1,32 @@
+GET  http://localhost:8080/api/productos
+
+###
+GET  http://localhost:8080/api/productos/61b27042fb16cad40f366c90
+
+###
+POST http://localhost:8080/api/productos
+Content-Type: application/json
+x-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2MTlmZWU0ZjM2YTJkZWEwOTM0MGM5MDMiLCJpYXQiOjE2MzkwNzg5NzUsImV4cCI6MTYzOTA5MzM3NX0.Tgb4cDNhVKdx5Lvbr3iS7FBJAmRNgVbDo__WX8HDnMo
+
+{
+  "nombre":"Galletas Oreo",
+  "precio":20,
+  "categoria":"61abf1524ce8b7080d252c4b",
+  "descripcion":"Caja chica de galletas"
+}
+
+###
+PUT http://localhost:8080/api/productos/61b2873c932e23499f7a5289
+Content-Type: application/json
+x-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2MTlmZWU0ZjM2YTJkZWEwOTM0MGM5MDMiLCJpYXQiOjE2MzkwNzg5NzUsImV4cCI6MTYzOTA5MzM3NX0.Tgb4cDNhVKdx5Lvbr3iS7FBJAmRNgVbDo__WX8HDnMo
+
+{
+  "nombre":"Galletas Oreo magna",
+  "precio":130,
+  "descripcion":"caja grande de galletas"
+}
+
+###
+DELETE  http://localhost:8080/api/productos/61b27042fb16cad40f366c90
+Content-Type: application/json
+x-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2MTlmZWU0ZjM2YTJkZWEwOTM0MGM5MDMiLCJpYXQiOjE2MzkwNzg5NzUsImV4cCI6MTYzOTA5MzM3NX0.Tgb4cDNhVKdx5Lvbr3iS7FBJAmRNgVbDo__WX8HDnMo
