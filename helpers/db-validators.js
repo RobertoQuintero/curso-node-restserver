@@ -7,6 +7,7 @@ const esRolValido = async (rol = "") => {
   if (!existeRol) {
     throw new Error(`El rol ${rol} no está registrado en la BD`);
   }
+  return true;
 };
 
 const emailExiste = async (correo = "") => {
@@ -14,6 +15,7 @@ const emailExiste = async (correo = "") => {
   if (existeEmail) {
     throw new Error(`El correo ${correo} ya existe`);
   }
+  return true;
 };
 
 const existeUsuarioPorID = async (id) => {
@@ -21,6 +23,7 @@ const existeUsuarioPorID = async (id) => {
   if (!existeUsuario) {
     throw new Error(`El id ${id} no existe`);
   }
+  return true;
 };
 //valida que exista la categoria
 const existeCategoria = async (id) => {
@@ -28,6 +31,7 @@ const existeCategoria = async (id) => {
   if (!existeCategoria) {
     throw new Error(`El id ${id} no existe en la DB`);
   }
+  return true;
 };
 
 const existeProducto = async (id) => {
@@ -35,9 +39,21 @@ const existeProducto = async (id) => {
   if (!producto) {
     throw new Error(`El id ${id} no existe en la DB`);
   }
+  return true;
+};
+
+const coleccionesPermitidas = (coleccion = "", colecciones = []) => {
+  const incluida = colecciones.includes(coleccion);
+  if (!incluida) {
+    throw new Error(
+      `La colección ${coleccion} no es permitida, ${colecciones}`
+    );
+  }
+  return true;
 };
 
 module.exports = {
+  coleccionesPermitidas,
   esRolValido,
   emailExiste,
   existeUsuarioPorID,

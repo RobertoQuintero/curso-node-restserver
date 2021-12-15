@@ -1,1 +1,6 @@
-GET http://localhost:8080/api/buscar/usuarios/619fee4f36a2dea09340c903
+GET http://localhost:8080/api/buscar/usuarios/test5
+###
+GET https://restserver-nodeudemy.herokuapp.com/api/buscar/categorias/61abf1524ce8b7080d252c4b
+###
+GET http://localhost:8080/api/buscar/productos/galletas
+###
